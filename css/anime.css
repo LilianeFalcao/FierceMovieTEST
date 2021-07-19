@@ -1,0 +1,11 @@
+.conteudo{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+header img{
+    height: 100px;
+    border: 0;
+    margin: 80%;
+    align-items: center;
+}

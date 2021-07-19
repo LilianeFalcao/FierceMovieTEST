@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    background-color: #00040B;
+}
+.conteudo{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    width:100% ;
+}
+header h1{
+    color: whitesmoke;
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+header picture{
+    width: 20%;
+}
+header picture img{
+    height: 100px;
+    border: 0;
+    margin: 0 10%;
+    align-items: center;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 3%;
+}
+nav div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav div h3{
+    background-color:  rgba(64, 69, 81, 0.83);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-family: Sawarabi Gothic;
+    font-size: 1rem;
+    color: whitesmoke;
+    width: 70%;
+}
+nav div ul{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: whitesmoke;
+}
+nav div li{
+    list-style: none;
+    padding: 1rem;
+}
+nav a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: whitesmoke;
+    list-style: none;
+    padding: 1rem;
+}
+nav h2{
+    background-color:  rgba(64, 69, 81, 0.83);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-family: Sawarabi Gothic;
+    font-size: 1.3rem;
+    color: whitesmoke;
+    width: 70%;
+}
+main div{
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke;
+}

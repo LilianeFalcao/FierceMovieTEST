@@ -1,10 +1,10 @@
 *{
     box-sizing: border-box;
-    background-color: #00040B;
+    background-color: #040e1f;
 }
 .conteudo{
     width: 100%;
-    max-width: 1400px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 header{
@@ -87,4 +87,7 @@ main div{
     display: flex;
     flex-direction: row;
     color: whitesmoke;
+}
+nav > div.anime{
+    height: 100vh;
 }

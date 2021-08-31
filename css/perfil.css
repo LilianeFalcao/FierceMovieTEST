@@ -3,3 +3,170 @@
     max-width: 1400px;
     margin: 0 auto;
 }
+.perfil{
+    background-color:  #040e1f;
+}
+.perfil .img{
+    width: 100%;
+}
+.perfil .contenedor{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; 
+}
+.perfil .capa{
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 20rem;
+    border-radius: 0 0 12px 12px;
+}
+.perfil .foto_perfil{
+    display: block;
+    width: 230px;
+    height: 230px;
+    background-color:  #040e1f ;
+    position: absolute;
+    bottom: -65px;
+    left: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid  #040e1f;
+    box-shadow: 0 0 12px 2px  rgba(0, 0, 0, .2);
+}
+.perfil .mudar_perfil{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .5);
+    height: 57%;
+    bottom: 0;
+    left: 0;
+    color: whitesmoke;
+    text-decoration: none;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all ease-in 200ms;
+}
+.perfil .mudar_perfil i{
+    margin-bottom: .5rem;
+    font-size: 2rem;
+}
+.perfil .foto_perfil:hover .mudar_perfil{
+    transform: translateY(0);
+    opacity: 1;
+}
+.perfil .dados_usuario{
+    position: absolute;
+    display: block;
+    width: calc(100% -230px -8rem);
+    right: 0;
+    bottom: 0;
+    color: whitesmoke;
+    text-shadow: 0 0 5px  rgba(0, 0, 0, .2);
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+.perfil .nome_usuario{
+    font-size: 3rem;
+    white-space: nowrap;
+    margin-bottom: .75rem;
+    text-overflow: ellipsis;
+}
+.perfil .bio_usuario{
+    font-size: 1.1rem;
+    margin-bottom: .75rem;
+}
+.perfil .barra_perfil{
+    list-style: none;
+}
+.perfil .barra_perfil{
+    display: inline-block;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+}
+.perfil .configurações_perfil{
+    display: block;
+    position: relative;
+    right: 2rem;
+    top: 1rem;
+}
+.perfil .configurações_perfil{
+    border: 0;
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .5);
+    color: whitesmoke; 
+    cursor: pointer;
+}
+.perfil .menu ul{
+    display: flex;
+    list-style: none;
+    margin-left: calc(200px + 8rem) ;
+    width: calc(100% -200px -8rem);
+}
+.perfil .menu ul li{
+    margin-right: 1rem;
+}
+.perfil .menu a{
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 8px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all ease-in 200ms;
+}
+.perfil .menu a:hover{
+    background-color:rgba(46, 50, 63, 0.918);
+    color: whitesmoke;
+};
+@media(max-width: 780px){
+    .perfil .contenedor{
+        width: 100%;
+    }
+    .perfil .foto_perfil{
+        left: calc(50% - 115px);
+    }
+    .perfil .dados_usuario{
+        bottom: 200px;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+    .perfil .nome_usuario{
+        font-size: 2.1rem; 
+    }
+    .perfil .bio_usuario{
+        font-size: 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .perfil .capa{
+        height: 28rem;
+    }
+    .perfil .menu ul{
+        flex-direction: column;
+    }
+    .perfil .barra_perfil{
+        display: block;
+    }
+    .perfil .menu l{
+       margin-top: 4rem;
+     }
+    .perfil .menu ul{
+       display: flex;
+       list-style: none;
+       margin-left: auto;
+       margin-right: auto;
+       width: 70%;
+    }
+}

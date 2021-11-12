@@ -1,172 +1,149 @@
-.container{
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body{
+    margin: 0;
+    background-color: #020a18;
+    font-family: 'Noto sans', sans-serif;
 }
-.perfil{
-    background-color:  #040e1f;
-}
-.perfil .img{
-    width: 100%;
-}
-.perfil .contenedor{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%; 
-}
-.perfil .capa{
-    display: block;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 20rem;
-    border-radius: 0 0 12px 12px;
-}
-.perfil .foto_perfil{
-    display: block;
-    width: 230px;
-    height: 230px;
-    background-color:  #040e1f ;
-    position: absolute;
-    bottom: -65px;
-    left: 4rem;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 8px solid  #040e1f;
-    box-shadow: 0 0 12px 2px  rgba(0, 0, 0, .2);
-}
-.perfil .mudar_perfil{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    align-items: center;
+.main_login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #020a18;
+    color: whitesmoke;
     justify-content: center;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, .5);
-    height: 57%;
-    bottom: 0;
-    left: 0;
-    color: whitesmoke;
-    text-decoration: none;
-    transform: translateY(50%);
-    opacity: 0;
-    transition: all ease-in 200ms;
-}
-.perfil .mudar_perfil i{
-    margin-bottom: .5rem;
-    font-size: 2rem;
-}
-.perfil .foto_perfil:hover .mudar_perfil{
-    transform: translateY(0);
-    opacity: 1;
-}
-.perfil .dados_usuario{
-    position: absolute;
-    display: block;
-    width: calc(100% -230px -8rem);
-    right: 0;
-    bottom: 0;
-    color: whitesmoke;
-    text-shadow: 0 0 5px  rgba(0, 0, 0, .2);
-    padding-bottom: 1rem;
-    padding-right: 1rem;
-}
-.perfil .nome_usuario{
-    font-size: 3rem;
-    white-space: nowrap;
-    margin-bottom: .75rem;
-    text-overflow: ellipsis;
-}
-.perfil .bio_usuario{
-    font-size: 1.1rem;
-    margin-bottom: .75rem;
-}
-.perfil .barra_perfil{
-    list-style: none;
-}
-.perfil .barra_perfil{
-    display: inline-block;
-    font-size: 1.1rem;
-    margin-right: 1rem;
-}
-.perfil .configurações_perfil{
-    display: block;
-    position: relative;
-    right: 2rem;
-    top: 1rem;
-}
-.perfil .configurações_perfil{
-    border: 0;
-    padding: 8px 20px;
-    border-radius: 8px;
-    background-color: rgba(0, 0, 0, .5);
-    color: whitesmoke; 
-    cursor: pointer;
-}
-.perfil .menu ul{
+    align-items: center;
     display: flex;
-    list-style: none;
-    margin-left: calc(200px + 8rem) ;
-    width: calc(100% -200px -8rem);
+
 }
-.perfil .menu ul li{
-    margin-right: 1rem;
+.cadastro{
+    width: 50vh;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
-.perfil .menu a{
-    display: block;
-    text-decoration: none;
+.cadastro > h1{
+    font-size: 3vw;
     color: whitesmoke;
-    padding: 8px 20px;
-    font-weight: bold;
+} 
+img{
+    width: 35vw;
+}
+.image{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.card{
+    width: 60%; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color:#0c182c ;
+    border-radius: 25px;
+    box-shadow: 0px 10px 40px #000003;
+}
+
+.card > h1{
+    color: whitesmoke;
+    font-weight: 800;
+    margin: 0;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.text >input::placeholder{
+    color: rgb(112, 112, 112); 
+} 
+
+.text > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color:#192436 ;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #000003;
+    outline: none;
+    box-sizing: border-box;
+    margin: 10px 0px;
+}
+
+.text > label{
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+.logins{
+    display: flex;
+    flex-direction: row;
+}
+
+.btnlogin_google {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
     border-radius: 8px;
-    transition: all ease-in 200ms;
-}
-.perfil .menu a:hover{
-    background-color:rgba(46, 50, 63, 0.918);
+    outline: none;
+    text-transform:uppercase ;
+    font-weight: 800;
+    letter-spacing: 3;
+    cursor: pointer;
+    background: #a14d4d;
     color: whitesmoke;
-};
-@media(max-width: 780px){
-    .perfil .contenedor{
-        width: 100%;
-    }
-    .perfil .foto_perfil{
-        left: calc(50% - 115px);
-    }
-    .perfil .dados_usuario{
-        bottom: 200px;
-        left: 0;
-        width: 100%;
-        padding: 15px;
-        text-align: center;
-    }
-    .perfil .nome_usuario{
-        font-size: 2.1rem; 
-    }
-    .perfil .bio_usuario{
-        font-size: 1rem;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-    .perfil .capa{
-        height: 28rem;
-    }
-    .perfil .menu ul{
-        flex-direction: column;
-    }
-    .perfil .barra_perfil{
-        display: block;
-    }
-    .perfil .menu l{
-       margin-top: 4rem;
-     }
-    .perfil .menu ul{
-       display: flex;
-       list-style: none;
-       margin-left: auto;
-       margin-right: auto;
-       width: 70%;
-    }
+    box-shadow: 0px 10px 40px  #000003;
 }
+.btn_login_facebook{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform:uppercase ;
+    font-weight: 800;
+    letter-spacing: 3;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px #000003;
+    background: #3d4697;
+    color: whitesmoke;
+}
+.btn_login_discord{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform:uppercase ;
+    font-weight: 800;
+    letter-spacing: 3;
+    cursor: pointer;
+    background: #664e7c;
+    box-shadow: 0px 10px 40px #000003;
+    color: whitesmoke;
+}
+
+.btn_login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform:uppercase ;
+    font-weight: 800;
+    letter-spacing: 3;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #000003;
+}
+

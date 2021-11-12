@@ -1,6 +1,7 @@
-*{
+body{
     box-sizing: border-box;
     background-color: #040e1f;
+
 }
 .conteudo{
     width: 100%;

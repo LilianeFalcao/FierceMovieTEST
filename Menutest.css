@@ -1,0 +1,54 @@
+:root{
+    --fundototal: #0E181D ;
+    --fundo: #23353E;
+    --cor1: #3B4A52;
+    --hover: #404e55;
+}
+.container{
+    background-color: var(--fundototal);
+}
+.container h1{
+    display: flex;
+    color: whitesmoke;
+}
+.LoginDRop ul{
+    list-style-type: none;
+    padding: 0%;
+}
+.LoginDRop ul{
+    background-color: var(--fundo);
+}
+.LoginDRop ul li{
+    display: inline;
+    position: relative;
+    color: whitesmoke;
+}
+.LoginDRop ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: backgroud .3s;
+}
+
+.LoginDRop ul li a:hover{
+    background-color: var(--hover);
+}
+
+/* sub menu */
+
+.LoginDRop ul ul{
+    display: none;
+    position: absolute;   
+}
+
+.LoginDRop ul li :hover>ul{
+    display: block ;
+}
+.LoginDRop ul ul{
+    width: 150px;
+}
+.LoginDRop ul ul li a{
+    display: block;
+}
+

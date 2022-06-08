@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #0E181D;
+    text-decoration: none;
+}
+.container h1{
+    display: flex;
+    color: whitesmoke;
+}
+.LoginDRop ul li a{
+    color: whitesmoke;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #23353E;
+}
+.LoginDRop ul li a:hover{
+    background-color: #404e55;
+}
+
+.LoginDRop{
+    width: 100vw;
+    background-color: #23353E;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.LoginDRop ul{
+    list-style: none;
+    margin-top: 2%;
+}
+
+.LoginDRop ul li{
+    background-color: #23353E;
+    color: whitesmoke;
+    width: 170px ;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    font-size: 16px;
+    position: relative;
+    transform: uppercase;
+    font-weight: bold;
+}
+.LoginDRop ul li:hover{
+    background-color: #404e55;
+}
+.LoginDRop ul ul{
+    display: none;
+    margin: 0px;    
+}
+.LoginDRop ul li:hover >ul{
+    flex-direction: row;
+    display: block;
+}

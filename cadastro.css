@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(loginD.png);
+    background: url(cadastroD.png);
 }
 .loginb{
     width:520px ;
@@ -29,7 +29,6 @@ h1{
 .loginb div {
     display: flex;
     justify-content: center;
-    padding: 10px;
     
 }
 .loginb p{

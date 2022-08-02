@@ -59,7 +59,7 @@ h1{
     color: whitesmoke;
     font-size: 18px;
 }
-.loginb input[type="submit"]:hover{
+.loginB input[type="submit"]:hover{
     cursor: pointer;
     background: #334979;
     color: whitesmoke;

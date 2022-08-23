@@ -16,6 +16,9 @@ body{
     padding: 70px;
     border-radius: 25px ;
 }
+section a{
+    padding: 10px;
+}
 h1{
     margin: 0;
     padding: 0 0 20px;
@@ -50,16 +53,17 @@ h1{
     color: whitesmoke;
     font-size: 16px;
 }
-.loginb input[type="submit"]{
+button{
     outline: none;
     border: none;
     height: 40px;
     background: #2d3e64;
-    border-radius: 20px ;
+    border-radius: 10px ;
     color: whitesmoke;
     font-size: 18px;
+    width: 400px;
 }
-.loginB input[type="submit"]:hover{
+button:hover{
     cursor: pointer;
     background: #334979;
     color: whitesmoke;

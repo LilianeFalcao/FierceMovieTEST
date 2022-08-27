@@ -3,6 +3,7 @@ body{
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh
 }
 .loginb{
     width:520px ;

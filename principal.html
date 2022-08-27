@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>principal</title>
     <link rel="stylesheet" href="css/principal.css">
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'>
+   <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+   <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.2.0/css/all.css'>
+   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700'>
 </head>
 <body class="container">
     <header>
@@ -17,10 +21,11 @@
                     <form action="#" method="post">
                         <input type="text" placeholder="Pesquisar">
                         <!--<button background: url('lupa.png')"></button>-->
-                         <button type="submit" img="lupa 13.png"><i> pesquisar</i></button> 
+                         <button type="submit" class="button" img="lupa 13.png">&#128269</button> 
                     </form>
                     <div class="logosHeader">
-                        <a href="usuario.html"> User's name</a>
+                        <a href="usuario.html" class="button"> User's name</a>
+                            <img src="./images/perfil.png" />
                     </div>
                 </div>
                 <div class="tags">
@@ -46,22 +51,73 @@
                     </ul>
                 </div>
             </div>
-        <!--
-        <nav>
-            <div class="nav-center">
-               nav header 
-              <div class="nav-header">
-                <h1>Lumière</h1>
-              </div>
-            </div>
-            <div id="nav-pesquisa">
-                <div id="divBusca">
-                    <input type="text" id="txtBusca" placeholder="Pesquisar"/>
-                    <img src="lupa 13.png" id="btnBusca" alt="Buscar"/>
-                  </div>
-            </div>
-          </nav>
-          -->
+      
+        <main>
+            <div class="options">
+                <div class="option active" style="--optionBackground:url(./images/ST.png);">
+                   <div class="shadow"></div>
+                   <div class="label">
+                      <div class="icon">
+                         <img src="./images/Stranger thing inicial" />
+                      </div>
+                      <div class="info">
+                         <div class="main">Stranger Things</div>
+                         <div class="sub">Nova Temporada.</div>
+                      </div>
+                   </div>
+                </div>
+                <div class="option" style="--optionBackground:url(./images/Heartstopper.png);">
+                   <div class="shadow"></div>
+                   <div class="label">
+                      <div class="icon">
+                         <img src="./images/ic-eleven.png" />
+                      </div>
+                      <div class="info">
+                         <div class="main">Heartstopper</div>
+                         <div class="sub">Dois garotos, um encontro</div>
+                      </div>
+                   </div>
+                </div>
+                <div class="option" style="--optionBackground:url(./images/euphoria.jpg);">
+                   <div class="shadow"></div>
+                   <div class="label">
+                      <div class="icon">
+                         <img src="./images/ic-hopper.png" />
+                      </div>
+                      <div class="info">
+                         <div class="main">Euphoria</div>
+                         <div class="sub">Drogas e mais drogas</div>
+                      </div>
+                   </div>
+                </div>
+                <div class="option" style="--optionBackground:url(./images/OnePiece.jpg);">
+                   <div class="shadow"></div>
+                   <div class="label">
+                      <div class="icon">
+                         <img src="./images/ic-eddie.png" />
+                      </div>
+                      <div class="info">
+                         <div class="main">One Piece</div>
+                         <div class="sub">Bem-vinda à Wano.</div>
+                      </div>
+                   </div>
+                </div>
+                <div class="option" style="--optionBackground:url(./images/Kimestsu.jpg);">
+                   <div class="shadow"></div>
+                   <div class="label">
+                      <div class="icon">
+                         <img src="./images/ic-dustin.png" />
+                      </div>
+                      <div class="info">
+                         <div class="main">Kimetsu no Yaiba</div>
+                         <div class="sub"></div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+             <script src="./js/script.js"></script>
+        </main>
     </header>
 </body>
 </html>

@@ -21,40 +21,10 @@
     color: white;
     padding: 1rem;
 }
-/*    background-color: #23353E;  */
-/*
-.button {
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #fff;
-    outline:2px solid #fff;
-    padding: 30px 60px;
-    position: relative;
-    overflow: hidden;
-    transition: color 3s;
-}
-.button:hover{
-    color: #082230;
-}
-.button::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -50px;
-    width: 0;
-    height: 100%;
-    background-color: #fff;
-    transform: skewX(35deg);
-    z-index: -1;
-    transition: width 1s;
-}
-.button:hover::before{
-    width: 150%;
-}
-*/
-
 .logosHeader{
+    position: relative;
+    left: 9px;
+    right: 6px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -91,6 +61,8 @@ h2 {
 }
 
 form input{
+    position: relative;
+    left: 10%;
     border-radius: 0.4rem;
     background: rgba(196, 196, 196, 0.5);
     border: 1px solid #969494;
@@ -227,11 +199,11 @@ main #user-button .u-icons a div {
   padding: 0.5rem;
   transition: 0s;
 }
-main #user-button .u-icons a[href="https://twitter.com/Osorpenke"]
+main #user-button .u-icons 
 {
   position: relative;
 }
-main #user-button .u-icons a[href="https://twitter.com/Osorpenke"]:before
+main #user-button .u-icons:before
 {
   content: "Middle Click";
   position: absolute;
@@ -247,12 +219,12 @@ main #user-button .u-icons a[href="https://twitter.com/Osorpenke"]:before
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
 }
-main #user-button .u-icons a[href="https://twitter.com/Osorpenke"].show:before
+main #user-button .u-icons .show:before
 {
   opacity: 1;
   transition: 0.25s ease-out;
 }
-main #user-button .u-icons a[href="https://twitter.com/Osorpenke"] div
+main #user-button .u-icons div
 {
   color: #1da1f2;
 }
@@ -471,24 +443,6 @@ main .options .option.active {
      transform:scale(0.9);
   }*/
 }
-main .saibaM {
-    min-width: 60px;
-    margin: 10px;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    padding-right: 25rem;
-    width: 940px;
-    left: 63.3%;
-    right: 1.7%;
-    top: 22.06%;
-    bottom: 40.98%;
-
-    background: #2A363D;
-    border-radius: 21px;
-    height: 671px;
-
-}
 
 main .options .option.active .shadow {
   box-shadow: inset 0 -120px 120px -120px black,
@@ -579,4 +533,14 @@ main .options .option .label .info .main {
 }
 main .options .option .label .info .sub {
   transition-delay: 0.1s;
+}
+
+main .saibaM{
+position: relative;
+left: 69%;
+right: 1.7%;
+top: 0.2%;
+bottom: 100%;
+background: #2A363D;
+border-radius: 21px;
 }

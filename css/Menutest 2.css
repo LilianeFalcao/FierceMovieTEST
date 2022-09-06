@@ -1,14 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    background-color: #0E181D;
-    text-decoration: none;
-}
-.container h1{
-    display: flex;
-    color: whitesmoke;
-    justify-content: flex-start;
-}
+
 .LoginDRop ul li a{
     color: whitesmoke;
     font-size: 22px;

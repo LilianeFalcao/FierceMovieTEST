@@ -367,6 +367,10 @@ main .credit {
   left: 20px;
   color: inherit;
 }
+main div .passaprolado{
+ width: 50%;
+
+}
 main .options {
   display: flex;
   flex-direction: row;
@@ -374,7 +378,7 @@ main .options {
   overflow: hidden;
   min-width: 600px;
   max-width: 900px;
-  width: calc(100% - 100px);
+  width: calc(50% - 100px);
   height: 350px;
 }
 @media screen and (max-width: 718px) {
@@ -542,11 +546,11 @@ main .options .option .label .info .sub {
 }
 
 main .saibaM{
-position: relative;
-left: 69%;
-right: 1.7%;
-top: 0.2%;
-bottom: 100%;
-background: #2A363D;
-border-radius: 21px;
-}
+  position: relative;
+  left: 69%;
+  right: 1.7%;
+  top: 0%;
+  bottom: 100%;
+  background: #2A363D;
+  border-radius: 21px;
+  }

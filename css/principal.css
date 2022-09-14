@@ -376,10 +376,12 @@ main .options {
   flex-direction: row;
   align-items: stretch;
   overflow: hidden;
+  margin-left: 2%;
   min-width: 600px;
-  max-width: 900px;
-  width: calc(50% - 100px);
-  height: 350px;
+  max-width: 800px;
+  width: calc(100% - 100px);
+  height: 500px;
+  margin-top: 2%;
 }
 @media screen and (max-width: 718px) {
   main .options {
@@ -544,7 +546,6 @@ main .options .option .label .info .main {
 main .options .option .label .info .sub {
   transition-delay: 0.1s;
 }
-
 main .saibaM{
   position: fixed;
   left: 70%;
@@ -554,14 +555,20 @@ main .saibaM{
   width: 500px;
   }
 
+main .Destaques{
+  position: static;
+  margin-left: 80%;
+  margin-top: 1%;
+  margin-bottom: 80%;
+}
 .data{
   font-size: 10px;
   color: white;
   text-align: left;
   
 }
-.wdate{
-  text-align: center;
+main div .date{
+  text-align: left;
 }
 
 h3{
@@ -578,4 +585,8 @@ h3{
 }
 div .Separacao .data{
   align-items: right;
+}
+main .delimitando {
+  max-width: 1200px;
+  max-height: 750px;
 }

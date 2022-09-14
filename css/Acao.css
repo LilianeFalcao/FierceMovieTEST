@@ -540,12 +540,22 @@ main .options .option .label .info .sub {
   transition-delay: 0.1s;
 }
 
-main .saibaM{
+main .posicaodoquadradododestaques{
 position: relative;
-left: 69%;
+left: 72%;
 right: 1.7%;
-top: 0.2%;
+top: 10%;
 bottom: 100%;
 background: #2A363D;
 border-radius: 21px;
+width: 500px;
+}
+main .objetosdoquadrado{
+  color: white;
+  margin-right: 1%;
+}
+
+main .delimitando {
+  max-width: 1200px;
+  max-height: 750px;
 }

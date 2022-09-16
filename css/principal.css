@@ -10,8 +10,6 @@
     background-color: #0E181D;
 }
 
-/* Header */
-
 .upperHead {
     display: flex;
     align-items: center;
@@ -109,484 +107,63 @@ a {
     align-items: center;
     padding: 7px;
 }
-
-
-@import url(https://pro.fontawesome.com/releases/v5.11.2/css/all.css);
-:root {
-  --user-button-circle: rgba(0, 0, 0, 0.025);
-  --user-button-cardborder: rgba(255, 255, 255, 0.25);
-  --user-button-text: #323133;
-  --user-button-shadow: rgba(0, 0, 0, 0.1);
+main .delimitando {
+  max-width: 1800px;
+  max-height: 750px;
+  margin-left: 50px;
 }
- main{
-    margin: 10px;
- }
-main #user-button {
-  z-index: 1000;
-  bottom: 1rem !important;
-  right: 1rem !important;
-  color: var(--user-button-text);
-  transition: 1s 0s ease-out;
-  -webkit-animation: slide 3s ease-out forwards;
-  animation: slide 3s ease-out forwards;
-}
-@-webkit-keyframes slide {
-  0%,
-  50% {
-    opacity: 0;
-    display: block !important;
-  }
-  100% {
-    opacity: 1;
-    display: block !important;
-  }
-}
-@keyframes slide {
-  0%,
-  50% {
-    opacity: 0;
-    display: block !important;
-  }
-  100% {
-    opacity: 1;
-    display: block !important;
-  }
-}
-main #user-button .u-card {
-  border-radius: 100%;
-  box-shadow: 0 0 1rem -0.25rem var(--user-button-shadow),
-    inset 0 0 1rem -0.75rem var(--user-button-shadow);
-}
-main #user-button .u-main {
-  cursor: pointer;
-  --user-button-background: var(--user-button-main, #ec87c0);
-}
-main #user-button .u-main img {
-  height: 100%;
-  width: 100%;
-}
-main #user-button .u-main iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4rem;
-  height: 4rem;
-  opacity: 1;
-  transition: 0s 4s;
-}
-main #user-button .u-icons {
+main .posicaodoquadradododestaques{
   position: relative;
-  z-index: 950;
-  transform: translate(-50%, -50%);
-  background: var(--user-button-circle);
-  box-shadow: 0 0 0 0.125rem var(--user-button-cardborder);
-  border-radius: 100%;
-  transition: 0.25s;
-  opacity: 1 !important;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  /*&:before {
-     z-index:-1;
-     position:absolute;
-     top:0; right:0; bottom:0; left:0;
-     content:'';
-     backdrop-filter: blur(10px);
-  }*/
-}
-main #user-button .u-icons a {
-  color: inherit;
-  display: grid;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-  text-decoration: none;
-}
-main #user-button .u-icons a div {
-  padding: 0.5rem;
-  transition: 0s;
-}
-main #user-button .u-icons 
-{
-  position: relative;
-}
-main #user-button .u-icons:before
-{
-  content: "Middle Click";
-  position: absolute;
-  top: -1.5rem;
-  left: 50%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  white-space: pre;
-  transform: translateX(-50%);
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.25s ease-in;
-  background: #fffc;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-}
-main #user-button .u-icons .show:before
-{
-  opacity: 1;
-  transition: 0.25s ease-out;
-}
-main #user-button .u-icons div
-{
-  color: #1da1f2;
-}
-main #user-button .u-icons a[href="https://codepen.io/z-"] div
-{
-  background: black;
-  color: white;
-}
-main #user-button .u-icons a.u-random div {
-  position: relative;
-  top: -1px;
-  -webkit-animation: diespin 2s linear infinite;
-  animation: diespin 2s linear infinite;
-}
-@-webkit-keyframes diespin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes diespin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-main #user-button .u-icons a.u-random:not(:hover) div {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-main #user-button .u-icons > * {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background: var(--singlecolour);
-  border-radius: 100%;
-  cursor: pointer;
-  transform: translate(-50%, -50%);
-  transition: 0.25s -0.05s;
-}
-main #user-button .u-icons > *:before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-main #user-button .u-icons > *:hover,
-main #user-button .u-icons > *:focus-within {
-  background: var(--hcolour);
-}
-main #user-button .u-icons > *:first-child:nth-last-child(1):nth-child(1),
-main #user-button .u-icons > *:first-child:nth-last-child(1) ~ *:nth-child(1) {
-  left: 25%;
-  top: 25%;
-}
-main #user-button .u-icons > *:first-child:nth-last-child(2):nth-child(1),
-main #user-button .u-icons > *:first-child:nth-last-child(2) ~ *:nth-child(1) {
-  left: 37.5%;
-  top: 18.75%;
-}
-main #user-button .u-icons > *:first-child:nth-last-child(2):nth-child(2),
-main #user-button .u-icons > *:first-child:nth-last-child(2) ~ *:nth-child(2) {
-  left: 18.75%;
-  top: 37.5%;
-}
-main #user-button .u-icons > *:first-child:nth-last-child(3):nth-child(1),
-main #user-button .u-icons > *:first-child:nth-last-child(3) ~ *:nth-child(1) {
-  left: 50%;
-  top: 15.625%;
-}
-main #user-button .u-icons > *:first-child:nth-last-child(3):nth-child(2),
-main #user-button .u-icons > *:first-child:nth-last-child(3) ~ *:nth-child(2) {
-  left: 25%;
-  top: 25%;
-}
-main #user-button .u-icons > *:first-child:nth-last-child(3):nth-child(3),
-main #user-button .u-icons > *:first-child:nth-last-child(3) ~ *:nth-child(3) {
-  left: 15.625%;
-  top: 50%;
-}
-main #user-button .u-icons > *:first-child:nth-last-child(4):nth-child(1),
-main #user-button .u-icons > *:first-child:nth-last-child(4) ~ *:nth-child(1) {
-  left: 62.5%;
-  top: 18.75%;
-}
-main #user-button .u-icons > *:first-child:nth-last-child(4):nth-child(2),
-main #user-button .u-icons > *:first-child:nth-last-child(4) ~ *:nth-child(2) {
-  left: 37.5%;
-  top: 18.75%;
-}
-main #user-button .u-icons > *:first-child:nth-last-child(4):nth-child(3),
-main #user-button .u-icons > *:first-child:nth-last-child(4) ~ *:nth-child(3) {
-  left: 18.75%;
-  top: 37.5%;
-}
-main #user-button .u-icons > *:first-child:nth-last-child(4):nth-child(4),
-main #user-button .u-icons > *:first-child:nth-last-child(4) ~ *:nth-child(4) {
-  left: 18.75%;
-  top: 62.5%;
-}
-main #user-button:hover .u-icons,
-main #user-button:focus-within .u-icons {
-  width: 300% !important;
-  height: 300% !important;
-}
-
-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  height: 100vh;
-  font-family: "Roboto", sans-serif;
-  transition: 0.25s;
-}
-main.dark {
-  background: #0E181D;
-  color: white;
-}
-@media (prefers-color-scheme: dark) {
-  main:not(.light) {
-    background: #0E181D;
-    color: white;
-  }
-}
-main .credit {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: inherit;
-}
-main div .passaprolado{
- width: 50%;
-
-}
-main .options {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  overflow: hidden;
-  margin-left: 2%;
-  min-width: 600px;
-  max-width: 800px;
-  width: calc(100% - 100px);
-  height: 500px;
-  margin-top: 2%;
-}
-@media screen and (max-width: 718px) {
-  main .options {
-    min-width: 520px;
-  }
-  main .options .option:nth-child(5) {
-    display: none;
-  }
-}
-@media screen and (max-width: 638px) {
-  main .options {
-    min-width: 440px;
-  }
-  main .options .option:nth-child(4) {
-    display: none;
-  }
-}
-@media screen and (max-width: 558px) {
-  main .options {
-    min-width: 360px;
-  }
-  main .options .option:nth-child(3) {
-    display: none;
-  }
-}
-@media screen and (max-width: 478px) {
-  main .options {
-    min-width: 280px;
-  }
-  main .options .option:nth-child(2) {
-    display: none;
-  }
-}
-main .options .option {
-  position: relative;
-  overflow: hidden;
-  min-width: 60px;
-  margin: 10px;
-  background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
-  background-size: auto 120%;
-  background-position: center;
-  cursor: pointer;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-main .options .option:nth-child(1) {
-  --defaultBackground: #ed5565;
-}
-main .options .option:nth-child(2) {
-  --defaultBackground: #fc6e51;
-}
-main .options .option:nth-child(3) {
-  --defaultBackground: #ffce54;
-}
-main .options .option:nth-child(4) {
-  --defaultBackground: #2ecc71;
-}
-main .options .option:nth-child(5) {
-  --defaultBackground: #5d9cec;
-}
-main .options .option:nth-child(6) {
-  --defaultBackground: #ac92ec;
-}
-main .options .option.active {
-  flex-grow: 10000;
-  transform: scale(1);
-  max-width: 600px;
-  margin: 0px;
-  border-radius: 40px;
-  background-size: auto 100%;
-  /*&:active {
-     transform:scale(0.9);
-  }*/
-}
-
-main .options .option.active .shadow {
-  box-shadow: inset 0 -120px 120px -120px black,
-    inset 0 -120px 120px -100px black;
-}
-main .options .option.active .label {
-  bottom: 20px;
-  left: 20px;
-}
-main .options .option.active .label .info > div {
-  left: 0px;
-  opacity: 1;
-}
-main .options .option:not(.active) {
-  flex-grow: 1;
-  border-radius: 30px;
-}
-main .options .option:not(.active) .shadow {
-  bottom: -40px;
-  box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
-}
-main .options .option:not(.active) .label {
-  bottom: 10px;
-  left: 10px;
-}
-main .options .option:not(.active) .label .info > div {
-  left: 20px;
-  opacity: 0;
-}
-main .options .option .shadow {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  height: 120px;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-main .options .option .label {
-  display: flex;
-  position: absolute;
-  right: 0px;
-  height: 40px;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-main .options .option .label .icon {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  min-width: 40px;
-  max-width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  background-color: white;
-  color: var(--defaultBackground);
-}
-main .options .option .label .icon img {
-  min-width: 20px;
-  max-width: 20px;
-}
-main .options .option .label .icon {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  min-width: 40px;
-  max-width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  background-color: #212123;
-  color: var(--defaultBackground);
-}
-main .options .option .label .info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 10px;
-  color: white;
-  white-space: pre;
-}
-main .options .option .label .info > div {
-  position: relative;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
-}
-main .options .option .label .info .main {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-main .options .option .label .info .sub {
-  transition-delay: 0.1s;
-}
-main .saibaM{
-  position: fixed;
-  left: 70%;
-  top: 17%;
+  left: 72%;
+  right: 1.7%;
+  top: 10%;
+  bottom: 100%;
   background: #2A363D;
-  border-radius: 10px;
+  border-radius: 21px;
   width: 500px;
   }
-
-main .Destaques{
-  position: static;
-  margin-left: 80%;
-  margin-top: 1%;
-  margin-bottom: 80%;
-}
-.data{
-  font-size: 10px;
+main .letrasenumerosdosquadrados{
   color: white;
-  text-align: left;
-  
+  margin-left: 5%;
 }
-main div .date{
+  
+main .data {
+  color: white;
+  margin-right: 40%;
   text-align: left;
+
 }
 
-h3{
-  color: white;
-  
-}
-.Separacao{
-  width: 100%;
-  height: 460px;
-  float: right;
+
+main .caraiododestaque{
   text-align: center;
-  margin-bottom: 20px;
-  position: relative;
 }
-div .Separacao .data{
-  align-items: right;
+
+main .posicaodoquadradocomunidades{
+ position: relative;
+  left: 72%;
+  right: 1.7%;
+  top: 5%;
+  bottom: 100%;
+  background: #2A363D;
+  border-radius: 21px;
+  width: 500px;
+    }
+main .letrasenumerosdosquadradodacomunidades{
+   color: white;
+   margin-left: 5%;
 }
-main .delimitando {
-  max-width: 1200px;
-  max-height: 750px;
+    
+main .cdata {
+  color: white;
+  margin-right: 50%;
+  text-align: left;
+}
+main .caraiododoquadradosdacomunidades{
+  text-align: center;
+}
+
+main .imagem.cimagem {
+    position: right;
+    margin-left: 15px;
 }

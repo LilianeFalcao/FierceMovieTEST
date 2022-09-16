@@ -556,6 +556,7 @@ main .objetosdoquadrado{
 }
 
 main .delimitando {
-  max-width: 1200px;
+  max-width: 1800px;
   max-height: 750px;
+  margin-left: 50px;
 }

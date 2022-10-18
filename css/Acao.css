@@ -220,7 +220,7 @@ a {
     max-width: 600px;
     max-height: 650px;
     width: 500px;
-    height: 310px;
+    height: 320px;
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -249,11 +249,17 @@ a {
     height: 50px;
 }
 
-.mostrarmais{
-    cursor: pointer;
+
+.quadradodestaques .destaquesmostrarmais{
+    margin-top: 2px;
+    margin-left: 150px;
+  }
+  
+.quadradocomunidades .comunidadesmostrarmais{
     margin-top: 10px;
-    margin-left: 150px ;
-}
+    margin-left: 150px;
+  }
+  
 .quadros{
     display: flex;
     flex-direction: column;
